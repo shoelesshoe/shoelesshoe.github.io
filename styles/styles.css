@@ -1,0 +1,181 @@
+/* reset */
+main {
+    padding: 0 !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* fonts */
+body {
+    font-family: 'PT Serif', 'Times New Roman', serif !important;
+    font-size: large;
+}
+
+h1, h2, h3, h4, h5, h6, nav a, footer a, .paragraphHeading {
+    font-family: 'Source Sans Pro', 'Verdana', sans-serif !important;
+    font-size: xx-large;
+}
+
+/* styles */
+main {
+    overflow-x: hidden !important;
+}
+
+ul:not(navbar-nav) {
+    list-style-type: "→";
+}
+
+.sectionSeparator {
+    border-top: 3px dotted grey;
+}
+
+#air-pollution {
+    background-image: url(../images/airpollution2.jpg);
+    background-repeat: no-repeat;
+}
+
+#flood {
+    background-image: url(../images/flooding2.jpg);
+    background-repeat: no-repeat;
+}
+
+#heat {
+    background-image: url(../images/forestfire2.jpg);
+    background-repeat: no-repeat;
+}
+
+.overview {
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    background-color: rgb(240, 248, 243);
+}
+
+#statistics > article {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.carousel-img {
+    height: 95vh;
+    width: 100%;
+}
+
+.nav-link {
+    transition: background-color 0.3s linear, color 0.3s linear, border-radius 0.3s linear;
+}
+
+.nav-link:hover {
+    background-color: rgb(85, 83, 83);
+    color: rgb(140, 148, 138) !important;
+    border-radius: 5px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    transition: background-color 0.3s linear, opacity 0.3s linear;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: grey;
+    opacity: 50%;
+}
+
+.hidden-right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.hidden-left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.appear-from-side {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+.appear-gradually {
+    opacity: 1;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+figcaption {
+    font-style: italic;  /* font-italic cannot be used in figcaption */
+}
+
+#comments {
+    height: 10rem;
+}
+
+#rating {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+td {
+    border: 1px solid black;
+    width: auto;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(36, 136, 104);
+}
+
+li p {
+    margin-left: 10px;
+}
+
+header {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#sp-html {
+    background-image: url(../images/citynight.jpg);
+}
+
+#howto-html {
+    background-image: url(../images/earth.jpg);
+}
+
+#aboutme-html {
+    background-image: url(../images/night.jpg);
+}
+
+#index-html {
+    background-image: url(../images/sky.jpg);
+}

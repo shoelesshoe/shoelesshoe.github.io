@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <!-- styles -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <!-- favicon, list and footer icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="../images/earth.ico?v=2">  <!-- ?v=2 clears cache -->
+  <!-- scripts -->
+  <script defer src="../scripts/animations.js"></script>
+  <script defer src="../scripts/displaySliderValue.js"></script>
+  <script defer src="../scripts/climateClock.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top navbar-primary bg-dark bg-gradient">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand text-white btn btn-primary px-3 fs-4">Home</a>
+      <button class="navbar-toggler navbar-toggler-right navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3"><a href="aboutme.html" class="nav-link text-primary">About Me</a></li>
+          <li class="nav-item mx-3"><a href="howto.html" class="nav-link text-primary">How To Save The Earth</a></li>
+          <li class="nav-item mx-3"><a href="sp.html" class="nav-link text-primary">SP's Contributions</a></li>
+          <li class="nav-item mx-3"><a href="index.html#feedbackform" class="nav-link text-primary">Feedback Form</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="index-html" class="position-relative">
+    <h1 class="hidden border-bottom display-3 text-light fw-light position-absolute text-center top-50 start-50 translate-middle">Home</h1>
+  </header>
+  <main class="container-fluid">
+    <section class="row overview">
+      <h2 class="hidden-left text-center display-2 fw-bold">Take Action Now</h2>
+      <h6 class="text-danger display-6 text-center"><span id="years"></span> years, <span id="months"></span> months, <span id="days"></span> days, <br><span id="hours"></span> hours, <span id="minutes"></span> minutes and <span id="seconds"></span> seconds</h6>
+      <p class="text-center opacity-75 fs-5">is the amount of time we have left to limit global warming of 1.5<sup>o</sup>C.</p>
+    </section>
+    <div class="row m-0" id="statistics">
+      <article id="air-pollution" class="col-sm-md col-lg-4 text-center">
+        <h2 class="hidden-left text-white fw-bold">417ppm</h2>
+        <p class="hidden-left text-white">of CO<sub>2</sub> was found in the atmosphere in 2022, setting a global record</p>
+      </article>
+      <article id="flood" class="col-sm-md col-lg-4 text-center">
+        <h2 class="hidden-left text-white fw-bold">97mm</h2>
+        <p class="hidden-left text-white">was the new record set for global sea levels in 2021</p>
+      </article>
+      <article id="heat" class="col-sm-md col-lg-4 text-center">
+        <h2 class="hidden-left text-white fw-bold">47.0<sup>o</sup>C</h2>
+        <p class="hidden-left text-white">was the highest temperature recorded during the European heat waves in 2022</p>
+      </article>
+    </div>
+    <section class="row overview">
+      <h2 class="hidden-right text-center display-2 fw-bold">Think we still can wait? It's already happening</h2>
+      <p class="text-center opacity-75 fs-5">The impacts of climate change are omnipresent in our everyday lives. Just look around you.</p>
+    </section>
+    <div id="impacts" class="row m-0">
+      <div id="carousel" class="carousel slide mb-6 p-0" data-bs-ride="carousel" data-bs-theme="light">
+        <div id="indicators" class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="carousel-img" src="../images/beachlitter.jpg" alt="a beach filled with litter">
+            <div class="container">
+              <article class="carousel-caption text-start">
+                <h2>Beach Filled with Trash</h2>
+                <p class="opacity-75 d-inline-block">No rubbish bins near the beach? Just leave or dump your trash on the sand. No one would know, right? That's how our once clean beaches become polluted with garbage.</p>
+              </article>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img" src="../images/deadfish.jpg" alt="seaside filled with dead fish">
+            <div class="container">
+              <article class="carousel-caption">
+                <h2>Sea Pollution</h2>
+                <p class="opacity-75 d-inline-block">The garbage then floats into the once clean waters rich with marine life, polluting the waters with plastic bags which can trick marine animals into thinking they are food to consume, ultimately killing them.</p>
+              </article>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img" src="../images/meltingice.jpg" alt="3 seagulls on a small block of ice surrounded by water">
+            <div class="container">
+              <article class="carousel-caption text-end">
+                <h2>Melting Ice</h2>
+                <p class="opacity-75 d-inline-block">The greenhouse gases that we emit from cars, burning fuel for electricity etc. pollutes the air and heat up the Earth more quickly by trapping heat, as a result raising global temperatures and melting ice and polar caps.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon arrows"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon arrows"></span>
+        </button>
+      </div>
+    </div>
+    <section class="row overview">
+      <h2 class="hidden-left text-center display-2 fw-bold">Overview of The Website</h2>
+      <p class="opacity-75 text-center fs-5">Do take a look at the other webpages before you proceed on to the next section - The feedback form!</p>
+    </section>
+    <div id="aboutthewebsite" class="hidden-right container">
+      <div class="row my-4">
+        <article class="text-center col-sm-md col-lg-4 mt-lg-5">
+          <h2 class="fw-normal">About The Author</h2>
+          <p>This webpage consists of the author's academic achievements, hobbies, his personalities and values.</p>
+          <p><a class="btn btn-secondary" href="./aboutme.html">View Webpage »</a></p>
+        </article>
+        <article class="text-center col-sm-md col-lg-4 mt-lg-2">
+          <h2 class="fw-normal">What Can I Do To Save The Earth?</h2>
+          <p>This webpage talks about the ways you as an individual can do to contribute and do your part towards promoting sustainability in our everyday life by instiling healthy habits.</p>
+          <p><a class="btn btn-secondary" href="./howto.html">View Webpage »</a></p>
+        </article>
+        <article class="text-center col-sm-md col-lg-4">
+          <h2 class="fw-normal">Singapore Polytechnic's Efforts In Promoting Sustainability</h2>
+          <p>This webpage talks about how Singapore Polytechnic has ramped up efforts to promote environmental sustainability.</p>
+          <p><a class="btn btn-secondary" href="./sp.html">View Webpage »</a></p>
+        </article>
+      </div>
+    </div>
+    <div id="feedbackform">
+      <section class="row overview">
+        <h2 class="hidden-left text-center display-2 fw-bold">Feedback Form</h2>
+        <p class="text-center opacity-75 fs-5">Your honest feedback is extremely important to me. Thank you for taking your time to fill this up.</p>
+      </section>
+      <section class="container mt-5">
+        <form action="#" class="needs-validation">
+          <h3>Personal Particulars</h3>
+          <div class="row my-4">
+            <div class="col-sm col-md-lg-6 mb-3">
+              <label for="fullname" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullname" placeholder="Eg. John Doe" required>
+            </div>
+            <div class="col-sm col-md-lg-6 mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="example123@gmail.com" required>
+              <p class="form-text">Your email will be kept private.</p>
+            </div>
+          </div>
+          <h3>Feedback Of The Website</h3>
+          <div class="row my-4">
+            <label for="design" class="form-label">1) After looking through the webpages, how well do you think of the design and the layout of the webpages?<br>Enter a scale from 1 to 5 inclusive, where 1 represents cluttered and unattractive and 5 represents organised and aesthetically pleasing.</label>
+            <select id="design" class="form-select col-sm-md col-lg-6 mb-3">
+              <option selected>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="row my-4">
+            <label for="informative" class="form-label">2) After reading the webpages, how informative do you think the webpage were?<br>Enter a scale from 1 to 5 inclusive, where 1 represents not informative at all and 5 represents extremely informative.</label>
+            <select id="informative" class="form-select col-sm-md col-lg-6 mb-3">
+              <option selected>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="row my-4">
+            <label class="form-label">3) After reading the webpages, would you recommend it to others?</label>
+            <div id="recommend">
+              <div class="form-check ms-1">
+                <input class="form-check-input" type="radio" id="yes">
+                <label class="form-check-label" for="yes">Yes</label>
+              </div>
+              <div class="form-check ms-1">
+                <input class="form-check-input" type="radio" id="no">
+                <label class="form-check-label" for="no">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <label for="rating" class="form-label">4) After reading the webpages, out of 10, how much would you rate my website?</label>
+            <div class="slidecontainer">
+              <input type="range" min="0" max="10" value="5" class="slider" id="rating">
+              <p>Value: <span id="value"></span></p>
+            </div>
+          </div>
+          <div class="row my-4">
+            <label for="comments" class="form-label">5) Any other feedback/comments? Thank you!</label>
+            <div class="form-floating mb-4 mt-1">
+              <textarea class="form-control" placeholder="Feel free to type anything" id="comments"></textarea>
+              <label for="comments" class="form-label ms-3">Feel free to type anything</label>
+            </div>
+          </div>
+          <div class="row my-4">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="bg-dark pt-3 pb-1 mt-4">
+    <h3 class="text-secondary text-center">Contact Me / Socials</h3>
+    <ul class="nav justify-content-center border-bottom border-secondary pb-3">
+      <li class="nav-item px-5"><a target="_blank" href="https://github.com/shoelesshoe" class="nav-link px-2 text-primary"><i class="fa-brands fa-github"></i> Github</a></li>
+      <li class="nav-item px-5"><a target="_blank" href="https://sg.linkedin.com/in/randal-hong-zheng-jie?trk=profile-badge" class="nav-link px-2 text-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+      <li class="nav-item px-5"><a target="_blank" href="https://www.instagram.com/raandaal_/" class="nav-link px-2 text-primary"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+      <li class="nav-item px-5"><a target="_blank" href="mailto:randalhzj@gmail.com" class="nav-link px-2 text-primary"><i class="fa-regular fa-envelope"></i> Email</a></li>
+    </ul>
+    <p class="pt-3 text-center text-secondary">©Copyright. All Rights Reserved.</p>
+  </footer>
+</body>

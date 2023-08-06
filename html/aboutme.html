@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <!-- styles -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <!-- favicon, list and footer icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="../images/earth.ico?v=2">  <!-- ?v=2 clears cache -->
+  <!-- scripts -->
+  <script defer src="../scripts/animations.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top navbar-primary bg-dark bg-gradient">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand text-white btn btn-primary px-3 fs-4">Home</a>
+      <button class="navbar-toggler navbar-toggler-right navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item active border-bottom mx-3"><a href="aboutme.html" class="nav-link text-primary">About Me</a></li>
+          <li class="nav-item mx-3"><a href="howto.html" class="nav-link text-primary">How To Save The Earth</a></li>
+          <li class="nav-item mx-3"><a href="sp.html" class="nav-link text-primary">SP's Contributions</a></li>
+          <li class="nav-item mx-3"><a href="index.html#feedbackform" class="nav-link text-primary">Feedback Form</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="aboutme-html" class="position-relative">
+    <h1 class="hidden border-bottom display-3 text-light fw-light position-absolute text-center top-50 start-50 translate-middle">About Me</h1>
+  </header>
+  <main class="container-fluid my-5">
+    <div id="whoami" class="hidden shadow-lg p-3 mb-5 px-5 bg-body rounded row">
+      <figure class="col-sm-md col-lg-3 pb-4">
+        <img class="img-fluid" src="../images/malafish.jpg" alt="Me eating mala fish">
+        <figcaption class="text-center mb-2">&#x1F4CD; Blk 16 Bedok Bouth Ave 2 Hawker Centre</figcaption>
+      </figure>
+      <article class="col-sm-md col-lg-6">
+        <h2 class="text-center my-3">Who Am I?</h2>
+        <p>Hi! Welcome to my website! My name is <u>Randal Hong</u> and I'm currently studying in <u>Singapore Polytechnic</u> to pursue my interest and passion for <u>Applied AI and Analytics</u>.</p>
+        <div class="my-3 accordion" id="accordionAboutMe">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCCA">
+                Schools I went to and my Co-Curricular Activities (CCA)
+              </button>
+            </h2>
+            <div id="collapseCCA" class="accordion-collapse collapse show" data-bs-parent="#accordionAboutMe">
+              <div class="accordion-body">
+                <p>I graduated from Kheng Cheng Primary School (located in Toa Payoh) and subsequently from Zhonghua Secondary School (located in Serangoon). I joined my Primary School's Chinese Orchestra and picked up the 笛子 (Dizi) and picked up the flute in my Secondary School's Symphonic Band. As you can tell, I was very passionate to learn wind-instruments and was generally interested in music.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAchievements">
+                Academic Achievements
+              </button>
+            </h2>
+            <div id="collapseAchievements" class="accordion-collapse collapse" data-bs-parent="#accordionAboutMe">
+              <div class="accordion-body">
+                <p>Achieving a score of <b>237</b> for my Primary School Leaving Examinations, I always thought of myself as an average kid. However, this perspective of me changed drastically after I attained a net L1R4 score for my Ordinary Levels of <b>6</b> points after a long-gruelling 6 months of mogging for my preparation for the examinations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>Besides my academic achievements, I also have several interests, such as badminton, gaming, playing the guitar and going to the gym, which I will talk about some of them up next!</p>
+      </article>
+      <figure class="col-sm-md col-lg-3 pb-4">
+        <img class="img-fluid" src="../images/myself.jpg" alt="A picture of me in Australia">
+        <figcaption class="text-center mb-2">&#x1F4CD; Blue Moutains, New South Wales, Australia</figcaption>
+      </figure>
+    </div>
+    <section id="myinterests" class="hidden shadow-lg p-3 mb-5 px-5 bg-body rounded row">
+      <div class="container">
+        <div class="row pb-2">
+          <h2 class="text-center fs-1">My Interests</h2>
+        </div>
+        <div class="accordion" id="accordionInterests">
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingWeightlifting">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeightlifting">
+                <span class="text-center fs-3 paragraphHeading"><i class="fa-solid fa-dumbbell"></i> Weightlifting</span>
+              </button>
+            </div>
+            <div id="collapseWeightlifting" class="accordion-collapse collapse show" data-bs-parent="#accordionInterests">
+              <div class="accordion-body">
+                <div id="weightlifting" class="row mx-3">
+                  <article class="col-sm-md col-lg-9">
+                    <p>My weightlifting journey started off with, well ironically, bodyweight exercises, at the age of 14. I slowly grew stronger and started to get bored of these repetitive exercises. Thus, at the end of Secondary 3, I decided, with 2 of my close friends, to start going to a gym near my house so that we could get access to a wider plethora of weighted equipment which fuelled and enticed our interests.</p>
+                    <p>It was not a smooth sailing journey, though. As you know, Secondary 4 is a crucial year to all Singaporean students as we would be preparing for one of the major exams in our lifetime - the O'Level Examinations. With classes ending as late as 4 p.m. and still having Co-Curricular Activities (CCA) which ended around 7 p.m. most days, I struggled juggling my studies and this hobby. Imagine how tiring it is after a long day in school, having your energy levels depleted and still having to gym afterwards when you're already tired and just want to sleep. That was how I felt everyday. I did try to push myself despite the lethargy, but it did not work for long. As a result, I wasn't very consistent with going to the gym regularly.</p>
+                    <p>I also had to take a few weeks break in-between terms so that I could study and prepare for my countless tests, exams and prelims. To top it all off, I was also dealing with a shoulder injury that I had sustained before my Mid-Years, which ultimately took a toll on my progress as I could not perform many of the exercises without pain. It was also the fact that after a while, when I'm starting to see some progress in my physique and strength that I had to temporary stop gymming due to the sheer amount of workload that I had to constantly juggle, made me lose interest and ultimately stopped going to the gym consistently to focus on my upcoming O'Levels. At that point of time, I was worried whether I made the right choice of choosing to study for O'Levels over sacrificing my time and effort to earn such progress.</p>
+                    <p>After my O'Levels ended, I actually lost motivation to continue weightlifting as I became lazy after not doing so for almost half a year. I finally decided to invest and sign up for a private gym at Bishan so that I could get myself back in the gym after my friends convinced me repeatedly. Ever since then, from January 2023, till now, I have been weightlifting consistently for almost half a year. The sense of satisfaction I gain after a tough session keeps me motivated and wanting to go for another session. The sense of accomplishment I achieve pushing myself close or even past my limits and improving everyday can only be best described like the feeling of ecstasy in winning a video game.</p>
+                    <p>In retrospect, although I lost alot of my hard-earned progress that I accumulated over the years, I did not regret taking a break to focus on my O'Levels as I definitely could not have done as well as I could have if I still went to gym. Instead, this taught me a valuable lesson on how to manage my time better and learnt how to prioritise with so many things to do which schools would not be able to teach.</p>
+                    <div class="container-fluid" id="workoutplan">
+                      <h3>Here is an example of a day of my workout plan:</h3>
+                      <div class="row my-3">
+                        <div class="col-sm-md-lg">
+                          <p class="text-center">Day 1</p>
+                          <table>
+                            <tr>
+                              <th>Lift</th>
+                              <th>Sets x Reps</th>
+                              <th>Load</th>
+                            </tr>
+                            <tr>
+                              <td rowspan="2"><a href="https://www.youtube.com/watch?v=oEy5WFr-CDA&list=PL1rSl6Pd49Iml8C8ApbN2f-lj-3kayP7y">Squat</a></td>
+                              <td>1x1</td>
+                              <td>95kg</td>
+                            </tr>
+                            <tr>
+                              <td>3x7</td>
+                              <td>80kg</td>
+                            </tr>
+                            <tr>
+                              <td><a href="https://www.youtube.com/watch?v=u-H61Lf5Xb0&list=PL1rSl6Pd49IkbaOWEcBTS8Q3GS4uBhXNS&pp=iAQB">Bench Press</a></td>
+                              <td>2x1</td>
+                              <td>70kg</td>
+                            </tr>
+                            <tr>
+                              <td><a href="https://www.youtube.com/watch?v=7B5Exks1KJE">Rows</a></td>
+                              <td>3x10</td>
+                              <td>40kg</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <figure class="col-sm-md col-lg-3 pb-4">
+                    <img class="img-fluid" src="../images/deadlift.jpg" alt="Me deadlifting">
+                    <figcaption class="text-center">Me deadlifting 115kg</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGuitar">
+                <span class="text-center paragraphHeading fs-3"><i class="fa-solid fa-guitar"></i> Guitar</span>
+              </button>
+            </h2>
+            <div id="collapseGuitar" class="accordion-collapse collapse" data-bs-parent="#accordionInterests">
+              <div class="accordion-body">
+                <div id="guitar" class="mt-5 row mx-3">
+                  <figure class="col-sm-md col-lg-5 pb-4">
+                    <img class="img-fluid" src="../images/guitar2.jpg" alt="Guitarist shredding">
+                    <figcaption class="text-center">Guitarist shredding</figcaption>
+                  </figure>
+                  <div class="col-sm-md col-lg-7">
+                    <p>I grew up listening to rock songs, introduced by my parents, such as <a target="_blank" href="https://www.youtube.com/watch?v=8SbUC-UaAxE"><i>November Rain</i> by <i>Guns N' Roses</i></a> and <a target="_blank" href="https://www.youtube.com/watch?v=BN1WwnEDWAM"><i>Should I Stay Or Should I Go</i> by <i>The Clash</i></a>. Hence, since young, I've always been in awe of all the guitarists in the music videos who play impressive solos so effortlessly. But to play with such great skill would require years of committed practice and at a young age, I was lazy and did not want to learn how to play the guitar, which at that time to me had a steep learning curve.</p>
+                    <p>It was only when in Primary 6, during music lesson, where I got introduced to and was taught on how to the guitar with simple chords such as C, D, G and A. I was also introduced to the bass guitar, but what really intrigued me more was the guitar. A while later, my group and I formed a small rock band and we played <a target="_blank" href="https://www.youtube.com/watch?v=yKNxeF4KMsY"><i>Yellow</i> by <i>Coldplay</i></a>. Looking back, it sounded horrible, especially my playing, but it was definitely a great experience. The thrill on stage, playing the guitar to a large audience with my other friends jamming to the song was something that I definitely enjoy alot.</p>
+                    <p>After my PSLE, during the long break, I asked my parents whether they were willing to buy me an acoustic guitar and sign me up for a guitar class. Thankfully, they were supportive of my decision to pick up an instrument and signed my up for a guitar class jsut a stone's throw away from my house. I learnt many new techniques, such as strumming, finger-picking, barre chords and the most exciting part, learning how to play songs that I enjoyed. I also had to learn some theory which I hated, but the idea of it being able to help me become a better guitar player motivated me to master it properly.</p>
+                    <p>Unfortunately, after about a year, my guitar tutor stopped teaching, and I decided to stop my guitar lessons and attempted to self-learn online. As expected, it was significantly more challenging as I had no one to guide me through and with the overwhelming information on the Internet, I got lost. Luckily, I discovered a YouTube channel that I could understand concepts well called <a target="_blank" href="https://www.youtube.com/channel/UCcLsvLJOecfCL6RplXhaO4Q"><i>Ben Eller</i></a>, also popularly known on the Internet as Uncle Ben. Through his channel, while I learnt much more advanced concepts and skills like playing solos, I realised that it was hard to play solos on an acoustic guitar as it is more for strumming.</p>
+                    <p>As time went on, I started to gain exposure of more rock and metal songs through Uncle Ben's channel and started listening to them on a daily basis. I slowly realised that having an electric guitar was quintissential to playing metal and rock songs and that was when I decided to purchase an electric guitar at $150 only, with my hard-earned money from side hustles after O'Levels. As I had never played an electric guitar before, although both acousitc and electric guitars are ultimately guitars, there was a slight difference in terms of the feel of playing them and needed time to readjust to this unfamiliar style of playing. However, it did not take long until I enthusiastically started learning my first two rock songs: <a target="_blank" href="https://www.youtube.com/watch?v=cJRP3LRcUFg"><i>This Charming Man</i> by <i>The Smiths</i></a> and <a target="_blank" href="https://www.youtube.com/watch?v=7Nf8o-qhO2g"><i>All I Think About Now</i> by <i>The Pixies</i></a>. Some of these songs are definitely not easy and I'm still learning some, such as the famous <a target="_blank" href="https://www.youtube.com/watch?v=1w7OgIMMRc4"><i>Sweet Child O' Mine</i> by <i>Guns N' Roses</i></a>, but its the sense of satisfaction after practicing repeatedly for an hour just to get one part of the song correct which keeps me wanting to play the electric guitar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="myvalues" class="hidden shadow-lg p-3 mb-5 px-5 bg-body rounded row">
+      <aside class="col-sm-md col-lg-3 pb-4">
+        <figure>
+          <img src="../images/volunteering.jpg" alt="Volunteer stocking food aid into a van">
+          <figcaption class="text-center">Volunteer stocking food aid into a van</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/heart.jpg" alt="hand holding a heart">
+          <figcaption class="text-center">Hand holding a heart</figcaption>
+        </figure>
+      </aside>
+      <article class="col-sm-md col-lg-6">
+        <h2 class="text-center">My Values</h2>
+        <p>One of my key core values that I hold is compassion. Compassion is the ability to put yourself in other people's shoes an empathise with them. But listening is not all that it takes. It requires active listening without judging them, and offering assistance to them whenever necessary out of your own time and effort with no return in mind. All for the sole motive to help and make an impact to their lives. This can be achieved by volunteering which I had done so previously with my family last year.</p>
+        <p>We went to Bedok to help distribute care packages to families and elderly living alone who are in need of support. Seeing them living in such poor conditions for the first time, I was shocked at the sight of disorganised plastic bags that were scattered all over the house, leaving little room to walk around. The childrens' bedsheets were also torn and dirty with no air-conditioning in their room. That really broke my heart to see that they had to eat, sleep and study there. We also took time to sit and chat with them about the current issues they were facing, such as being lonely at home.</p>
+        <p>From that experience, I learnt that despite the majority of people living in Singapore appear to be living well, with access to luxurious food and entertainment, there are still some minority in community who are struggling to attain such privileges. But that wasn't the most important takeaway. Rather, it was the smiles and laughter that we managed to bring to those who were in need made me feel proud and touched in return. We were able to impact and make a change on someone's life, regardless of it being short or long-term.</p>
+      </article>
+      <figure class="col-sm-md col-lg-3 pb-4">
+        <img class="img-fluid" src="../images/salvationarmy.jpg" alt="Volunteer from the Salvation Army">
+        <figcaption class="text-center">Volunteer from the Salvation Army</figcaption>
+      </figure>
+    </div>
+    <section id="mypersonality" class="hidden shadow-lg p-3 mb-5 px-5 bg-body rounded row">
+      <h2 class="text-center">My Personality</h2>
+      <figure class="col-sm-md col-lg-6 pb-4">
+        <img class="img-fluid" src="../images/personality.png" alt="ISFP-T Personality">
+        <figcaption class="text-center">My personality</figcaption>
+      </figure>
+      <div class="col-sm-md col-lg-6">
+        <p>My personality test result from the <a target="_blank" href="https://www.16personalities.com/">16personalities website</a> is Adventurer (ISFP-T). This resonates with my own perception of my personality as I do think that I am an adventurer, often exploring and learning something new everyday. For instance, when I come across an article about quantum computing, I will spend time reading about the topic until I get a full understanding of it before I do something else. I also find myself an introvert, often shying away from social interactions for quieter and calming environments. Being observant is also one of my strong points as since young, my father has been emphasizing and urging me to practice being observant as it is an essential life-skill to have. For instance, being able to spot some people's subtle body language when they are lying can help gain a deeper understanding of them and may save me in certain situations. Having volunteered before, I do think I am empathetic as seeing people who are in need and are staying in poor living conditions makes my heart melt and sympathise for them.</p>
+        <p>Apart from the test, I think I can be a bit lazy at times and tend to procrastinate alot. Although I tend to push tasks right until before the deadline, I still am able to complete it in time. And in fact, I feel that I am more productive rushing to complete tasks right before the deadline instead of doing it part by part everyday. Regardless, I still do my best to submit quality work and thus I do not find this as a bad thing. It's just another way to complete tasks more efficiently while having time to do other things that I want first, such as my hobbies.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark pt-3 pb-1 mt-4">
+    <h3 class="text-secondary text-center">Contact Me / Socials</h3>
+    <ul class="nav justify-content-center border-bottom border-secondary pb-3">
+      <li class="nav-item px-5"><a target="_blank" href="https://github.com/shoelesshoe" class="nav-link px-2 text-primary"><i class="fa-brands fa-github"></i> Github</a></li>
+      <li class="nav-item px-5"><a target="_blank" href="https://sg.linkedin.com/in/randal-hong-zheng-jie?trk=profile-badge" class="nav-link px-2 text-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+      <li class="nav-item px-5"><a target="_blank" href="https://www.instagram.com/raandaal_/" class="nav-link px-2 text-primary"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+      <li class="nav-item px-5"><a target="_blank" href="mailto:randalhzj@gmail.com" class="nav-link px-2 text-primary"><i class="fa-regular fa-envelope"></i> Email</a></li>
+    </ul>
+    <p class="pt-3 text-center text-secondary">©Copyright. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
